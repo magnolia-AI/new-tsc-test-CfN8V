@@ -8,8 +8,8 @@ import { MobileNav } from '@/components/mobile-nav'
 
 
 export const metadata: Metadata = {
-  title: 'Next.js Template',
-  description: 'A customizable template built with Next.js and Tailwind CSS',
+  title: 'Athenaeum | Luxury Library Experience',
+  description: 'Discover a world of rare books, curated collections, and exclusive literary experiences',
   icons: {
     icon: '/favicon.ico',
   },
@@ -39,16 +39,18 @@ export default function RootLayout({
                   Remember to update the mobile navigation in the mobile-nav.tsx file
                 */}
                 {/* <MobileNav /> */}
-                <div className="font-semibold">Template Logo</div>
+                <div className="font-serif text-xl tracking-wide">Athenaeum</div>
               </div>
-              {/* <nav className="hidden md:flex gap-6">
-                <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Link 1</a>
-                <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Link 2</a>
-                <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Link 3</a>
-              </nav> */}
+              <nav className="hidden md:flex gap-6">
+                <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Collections</a>
+                <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Membership</a>
+                <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Events</a>
+                <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">About</a>
+                <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Contact</a>
+              </nav>
               <div className="flex items-center gap-2">
                 <ThemeToggle />
-                <Button variant="outline" size="sm">Template Button</Button>
+                <Button variant="outline" size="sm" className="border-amber-800 text-amber-800 hover:bg-amber-800 hover:text-white rounded-none">Become a Member</Button>
               </div>
             </div>
           </header>
@@ -122,3 +124,6 @@ export default function RootLayout({
     </html>
   )
 }
+
+
+
